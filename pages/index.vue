@@ -1,44 +1,94 @@
 <template>
-  <div>
-    <h1>hello world</h1>
-    <AtomParagraph :my-prop="5" />
-  </div>
+  <main>
+    <div class="card-container">
+      <div class="card-wrapper">
+        <AtomIconSVG name="logo" width="120px" />
+        <p>Front-end Starter</p>
+        <div class="grid-container">
+          <div class="grid-item">
+            <a
+              href="https://github.com/henrique-arthur/braip-starter/blob/master/README.md"
+              target="_blank"
+            >
+              <span>💜</span>
+              Leia a documentação geral do projeto
+            </a>
+          </div>
+          <div class="grid-item">
+            <a
+              href="https://github.com/henrique-arthur/braip-starter/tree/master/components"
+              target="_blank"
+            >
+              <span>⚛️</span>
+              Sobre o Atomic Design
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://nuxtjs.org/" target="_blank">
+              <span>📗</span>
+              Documentação NuxtJs
+            </a>
+          </div>
+        </div>
+        <p class="version">Nuxt v2.15.8 Node v16.19.0</p>
+      </div>
+    </div>
+  </main>
 </template>
 
 <script>
-export default {
-  name: 'IndexPage',
-
-  data() {
-    return {
-      my_var: true,
-    }
-  },
-
-  computed: {
-    my_name() {
-      return this.data
-    },
-  },
-
-  watch: {
-    data(newValue, oldValue) {},
-  },
-
-  mounted() {
-    console.log('mounted')
-  },
-
-  methods: {
-    name(name) {
-      if (name.length > 30) {
-        return 'your name is too big'
-      } else if (name.length < 10) {
-        return 'your name is too short'
-      }
-
-      return 'your name is ok'
-    },
-  },
-}
+export default {}
 </script>
+
+<style>
+body {
+  background-color: #6d36fb;
+  background-image: url('/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<style scoped>
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card-container {
+  background-color: #fff;
+  color: #3c3c42;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  max-width: 768px;
+  width: 100%;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-container {
+  margin-top: 1rem;
+  background-color: #ebebfa;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+
+  font-size: 16px;
+}
+
+.version {
+  color: #959595;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 1rem 0 0 auto;
+}
+</style>
