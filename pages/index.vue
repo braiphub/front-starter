@@ -62,6 +62,7 @@ main {
   color: #3c3c42;
   border-radius: 4px;
   padding: 1rem 1.5rem;
+  margin: 0 1rem;
   max-width: 768px;
   width: 100%;
 }
@@ -83,6 +84,7 @@ main {
   gap: 1.5rem;
 
   font-size: 16px;
+  line-height: 130%;
 }
 
 .version {
