@@ -1,5 +1,8 @@
 <template>
-  <h1>hello world</h1>
+  <div>
+    <h1>hello world</h1>
+    <AtomParagraph :my-prop="5" />
+  </div>
 </template>
 
 <script>
@@ -33,6 +36,7 @@ export default {
       } else if (name.length < 10) {
         return 'your name is too short'
       }
+
       return 'your name is ok'
     },
   },
