@@ -15,6 +15,7 @@
   "dependencies": {
     "@nuxtjs/svg": "^0.4.0",
     "@nuxt/image": "^0.7.1",
+    "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
     "vue": "^2.7.10",

@@ -77,6 +77,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/eslint-module',
+    '@nuxtjs/axios',
     [
       '@nuxt/image',
       {
@@ -109,4 +110,5 @@ export default {
     NODE_ENV: process.env.NODE_ENV,
   },
   image: {},
+  axios: {},
 }
