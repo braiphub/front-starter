@@ -1,23 +1,23 @@
 {
+    "root": true,
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "node": true
     },
-    "extends": [
-        "plugin:vue/vue3-essential",
-        "standard","@nuxtjs", "plugin:nuxt/recommended", "prettier"
-    ],
+    "extends": ["@nuxtjs","plugin:nuxt/recommended", "prettier"],
     "overrides": [
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module",
         "parser": "@babel/eslint-parser",
-    "requireConfigFile": false
+        "requireConfigFile": false
     },
     "plugins": [
         "vue"
     ],
     "rules": {
+        "no-else-return": 1
     }
 }
