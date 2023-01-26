@@ -1,0 +1,223 @@
+:root {
+  /* Colors */
+  /* Brand Color */
+
+  --primaryDarkKest: #290090;
+  --primaryDark: #4c22bb;
+  --primaryDefault: transparent;
+  --primaryLight: #c5affd;
+  --primaryLightTest: #e2d7fe;
+
+  --secondaryDarkKest: #57ad00;
+  --secondaryDark: #6bc80e;
+  --secondaryDefault: #99ff33;
+  --secondaryLight: #d6ffad;
+  --secondaryLightTest: #ebffd6;
+
+  /* Neutral Color */
+
+  --darkGrey1: #0f1116;
+  --darkGrey2: #202227;
+  --darkGrey3: #313338;
+  --darkGrey4: #424449;
+  --darkGrey5: #53555a;
+  --darkGrey6: #64666b;
+  --darkGrey7: #75777c;
+  --darkGrey8: #86888d;
+
+  --lightGrey1: #94979e;
+  --lightGrey2: #a3a6ae;
+  --lightGrey3: #b2b5bb;
+  --lightGrey4: #cccfd6;
+  --lightGrey5: #dcdfe5;
+  --lightGrey6: #e9ebee;
+  --lightGrey7: #f5f5f5;
+  --lightGrey8: #fcfcfc;
+  --lightGrey9: #ffffff;
+
+  /* Auxiliary Color */
+
+  --greenDarkKest: #257419;
+  --greenDark: #42ae31;
+  --greenDefault: #5ec64d;
+  --greenLight: #a1eb95;
+  --greenLightTest: #d1f8cb;
+
+  --blueDarkKest: #0061c1;
+  --blueDark: #0080ff;
+  --blueDefault: #3399ff;
+  --blueLight: #add6ff;
+  --blueLightTest: #eff7ff;
+
+  --orangeDarkKest: #bd7800;
+  --orangeDark: #f49b00;
+  --orangeDefault: #fbb336;
+  --orangeLight: #ffdc9e;
+  --orangeLightTest: #fef0d7;
+
+  --redDarkKest: #990b0b;
+  --redDark: #d22020;
+  --redDefault: #ff2e2e;
+  --redLight: #ffb8b8;
+  --redLightTest: #ffe4e4;
+
+  /* Typography */
+  /* Fonts size */
+
+  --fontSizeTitleH1: 64px;
+  --fontSizeTitleH2: 56px;
+  --fontSizeTitleH3: 48px;
+  --fontSizeTitleH4: 40px;
+  --fontSizeTitleH5: 36px;
+  --fontSizeTitleH6: 32px;
+  --fontSizeTitleH7: 28px;
+  --fontSizeTitleH8: 24px;
+  --fontSizeTitleH9: 20px;
+
+  --fontSizeTextP1: 20px;
+  --fontSizeTextP2: 18px;
+  --fontSizeTextP3: 16px;
+  --fontSizeTextP4: 14px;
+  --fontSizeTextP5: 12px;
+  --fontSizeTextP6: 11px;
+
+  /* Transition dark them */
+  --togglerThemeTransition: background-color 0.5s;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+*::placeholder {
+  color: var(--lightGrey2);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--darkGrey2);
+}
+
+input {
+  border: 0;
+}
+
+/* Animation/Transitions Globais */
+body {
+  --togglerThemeTransition: background-color 0.5s;
+  background-color: var(--darkGrey1);
+}
+
+.anim-fade {
+  animation: animShowFade 1s forwards;
+}
+@keyframes animShowFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.anim-fade-down {
+  animation: animShowFadeDown 1.25s forwards;
+}
+@keyframes animShowFadeDown {
+  from {
+    opacity: 0;
+    margin-top: -120px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+.loading .anim-loading {
+  position: relative;
+  pointer-events: none;
+  overflow: hidden;
+  border-color: transparent;
+}
+.loading .anim-loading::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    var(--darkGrey1) 25%,
+    var(--darkGrey8) 50%,
+    var(--darkGrey1) 75%
+  );
+  background-size: 300%;
+  pointer-events: none;
+  border-radius: 5px;
+  z-index: 99;
+  animation: loadingEffect 3s infinite;
+}
+@keyframes loadingEffect {
+  from {
+    background-position: 300% 0;
+  }
+  to {
+    background-position: 0% 0;
+  }
+}
+
+/*  scrollbar custom  */
+body {
+  --scrollbarWidth: 15px;
+  --scrollbarPadding: 4px;
+  --scrollbarColor: rgb(0, 0, 0, 0.2);
+  --scrollbarColorHover: var(--primaryDefault);
+  --scrollbarBgColor: transparent;
+  scrollbar-color: var(--scrollbarColor) var(--scrollbarBgColor);
+}
+body *::-webkit-scrollbar {
+  width: var(--scrollbarWidth);
+  height: var(--scrollbarWidth);
+}
+body *:hover::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 var(--scrollbarWidth) var(--scrollbarWidth)
+    var(--scrollbarBgColor);
+  border-radius: var(--scrollbarWidth);
+  border: solid transparent;
+  border-width: var(--scrollbarPadding);
+}
+body *:hover::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 var(--scrollbarWidth) var(--scrollbarWidth)
+    var(--scrollbarColor);
+  border-radius: var(--scrollbarWidth);
+  border: solid transparent;
+  border-width: var(--scrollbarPadding);
+}
+body *:hover::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 var(--scrollbarWidth) var(--scrollbarWidth)
+    var(--scrollbarColorHover);
+}
+
+.delete-button-swal {
+  color: var(--redDefault) !important;
+  background: rgba(255, 46, 46, 0.15) !important;
+}
