@@ -90,7 +90,7 @@
 ::before {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
@@ -161,7 +161,7 @@ body {
   border-color: transparent;
 }
 .loading .anim-loading::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(

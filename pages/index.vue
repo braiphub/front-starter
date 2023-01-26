@@ -6,8 +6,24 @@
 export default {
   name: 'IndexPage',
 
+  data() {
+    return {
+      my_var: true,
+    }
+  },
+
+  computed: {
+    my_name() {
+      return this.data
+    },
+  },
+
   watch: {
     data(newValue, oldValue) {},
+  },
+
+  mounted() {
+    console.log('mounted')
   },
 
   methods: {
@@ -16,26 +32,8 @@ export default {
         return 'your name is too big'
       } else if (name.length < 10) {
         return 'your name is too short'
-      } else {
-        return 'your name is ok'
       }
-    },
-  },
-  async fetch() {},
-
-  data() {
-    return {
-      my_var: true,
-    }
-  },
-
-  mounted() {
-    console.log('mounted')
-  },
-
-  computed: {
-    name() {
-      return this.data
+      return 'your name is ok'
     },
   },
 }
