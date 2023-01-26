@@ -1,4 +1,4 @@
-**Atoms**
+## Atoms
 
 A subpasta `atoms` armazena os componentes base do desenvolvimento, componentes mais primitivos e genéricos. Ex.: Button, Image, Title, Input…
 

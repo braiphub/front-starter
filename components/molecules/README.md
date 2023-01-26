@@ -1,4 +1,4 @@
-**Molecules**
+## Molecules
 
 A subpasta `molecules` armazena componentes que fazem composição de atoms. Tendo então, um contexto menos genérico e de alta reutilização. Ex.: FormInput, AlertMessage, FormCardEditImage…
 

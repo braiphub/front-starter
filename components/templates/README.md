@@ -1,4 +1,4 @@
-**Templates**
+## Templates
 
 A subpasta `templates` armazena componentes que fazem composição de organisms, molecules e atoms. Tendo então, como principal responsabilidade a estruturação e posicionamento dos componentes nele incluso, dando um contexto extremamente especifico.
 
