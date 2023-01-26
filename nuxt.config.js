@@ -4,6 +4,9 @@ export default {
     title: 'Braip Front-end Starter',
     htmlAttrs: {
       lang: 'pt-BR',
+      serverMiddleware: [
+        { path: '/_ipx', handler: '~/server/middleware/ipx.js' },
+      ],
     },
     meta: [
       { charset: 'utf-8' },
@@ -72,7 +75,18 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/eslint-module'],
+  modules: [
+    '@nuxtjs/eslint-module',
+    [
+      '@nuxt/image',
+      {
+        domains: ['media.braip.com'],
+        alias: {
+          braip: 'https://media.braip.com/',
+        },
+      },
+    ],
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -94,4 +108,5 @@ export default {
   env: {
     NODE_ENV: process.env.NODE_ENV,
   },
+  image: {},
 }
