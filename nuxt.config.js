@@ -27,7 +27,6 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "@/assets/css/sweetalert2.css",
     "@/assets/css/fontawesome.css",
     "@/assets/css/reset.css",
     "@/assets/css/global.css",
