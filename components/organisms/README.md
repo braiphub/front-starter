@@ -1,4 +1,4 @@
-**Organisms**
+## Organisms
 
 A subpasta `organisms` armazena componentes que fazem composição de molecules e atoms. Tendo então, um contexto bem especifico. Ex.: NavBar, HeaderBar...
 

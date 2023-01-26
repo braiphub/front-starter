@@ -1,4 +1,4 @@
-**Components**
+## Components
 
 O diretório `components` contém seus componentes Vue.js. Os componentes são os que compõe as diferentes partes da sua página e podem ser reutilizados e importados dentro das suas páginas, dos templates e até dentro de outros componentes.
 
