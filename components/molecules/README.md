@@ -6,4 +6,4 @@ Quando combinados, esses átomos abstratos de repente têm um propósito. O áto
 
 Leia: [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)
 
-![image](https://user-images.githubusercontent.com/113141035/215094986-e6a5e538-204a-4598-8a6b-90e8c63481c0.png)
+![image](https://user-images.githubusercontent.com/113141035/215096683-eb2e2259-93ef-4a62-937b-b8c0f3357878.png)
