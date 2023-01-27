@@ -1,5 +1,10 @@
 ## Organisms
 
-A subpasta `organisms` armazena componentes que fazem composição de molecules e atoms. Tendo então, um contexto bem especifico. Ex.: NavBar, HeaderBar...
+Organismos são componentes de UI relativamente complexos compostos por grupos de moléculas e/ou átomos e/ou outros organismos . Esses organismos formam seções distintas de uma interface.
 
-Leia: [Atomic Design](https://medium.com/pretux/atomic-design-o-que-%C3%A9-como-surgiu-e-sua-import%C3%A2ncia-para-a-cria%C3%A7%C3%A3o-do-design-system-e3ac7b5aca2c)
+Os organismos podem consistir em tipos de moléculas semelhantes ou diferentes. Enquanto alguns organismos podem consistir em diferentes tipos de moléculas, outros organismos podem consistir na mesma molécula repetida várias vezes. Os organismos demonstram os componentes menores e mais simples em ação e servem como padrões distintos que podem ser usados repetidamente. 
+
+Leia: [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)
+
+![image](https://user-images.githubusercontent.com/113141035/215096425-692fa448-97a7-42ec-ac04-25a4fd70748f.png)
+
