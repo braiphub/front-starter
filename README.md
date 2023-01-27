@@ -41,33 +41,26 @@ Leia mais na [documentação do repositório]() ou na [documentação oficial](h
 
 ### `layouts`
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+No Nuxt.js, o diretório layouts é usado para armazenar arquivos de layout que são usados para estruturar a aparência geral de sua aplicação. Um layout é um arquivo Vue que contém a estrutura HTML básica de sua aplicação, como o cabeçalho e o rodapé. Ele também pode conter componentes comuns que são usados em várias páginas, como um menu de navegação.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+Leia mais [na documentação](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
 
 ### `plugins`
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+O diretório "plugins" no Nuxt.js é utilizado para armazenar arquivos JavaScript que podem ser carregados no contexto do aplicativo inteiro. Esses arquivos geralmente contêm código que precisa ser carregado antes da inicialização da aplicação, como configurações globais, importações de bibliotecas externas, etc. Também podem conter funções úteis que serão utilizadas durante toda aplicação.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+Ao utilizarmos plugins, temos [3 formas de extender](https://nuxtjs.org/docs/directory-structure/plugins/) sua funcionalidade para o nuxt.
+
+Também podemos carregá-los antes da aplicação principal, basta importá-lo no array `plugins` no arquivo `nuxt.config.js`, leia mais [na documentação](https://nuxtjs.org/docs/configuration-glossary/configuration-plugins/).
 
 ### `static`
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
+No Nuxt.js, o diretório `static` é usado para armazenar arquivos estáticos, como imagens, arquivos CSS e JavaScript. Esses arquivos são servidos diretamente pelo servidor web sem passar pelo processamento do Nuxt.js, o que os torna mais rápidos de carregar. Além disso, esses arquivos são copiados diretamente para o diretório raiz do seu aplicativo durante a construção, tornando-os acessíveis diretamente a partir da raiz do seu domínio, como "https://example.com/image.jpg".
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+Leia mais [na documentação](https://nuxtjs.org/docs/2.x/directory-structure/static).
 
 ### `store`
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+No Nuxt.js, o diretório "store" é usado para armazenar o estado da aplicação e sua lógica de negócios. Ele é baseado no Vuex, que é um padrão de gerenciamento de estado para aplicativos Vue.js.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+Leia mais [na documentação](https://nuxtjs.org/docs/2.x/directory-structure/store).
