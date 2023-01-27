@@ -64,7 +64,7 @@ export default {
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/svg', '@nuxtjs/fontawesome'],
+  buildModules: ['@nuxtjs/svg', '@nuxtjs/fontawesome', '@nuxtjs/google-fonts'],
 
   fontawesome: {
     component: 'fa',
@@ -111,4 +111,13 @@ export default {
   },
   image: {},
   axios: {},
+  googleFonts: {
+    display: 'swap',
+    preconnect: true,
+    families: {
+      Poppins: {
+        wght: [400, 500, 600],
+      },
+    },
+  },
 }
