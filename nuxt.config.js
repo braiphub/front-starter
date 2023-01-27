@@ -64,7 +64,7 @@ export default {
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/svg'],
+  buildModules: ['@nuxtjs/svg', '@nuxtjs/fontawesome'],
 
   fontawesome: {
     component: 'fa',
