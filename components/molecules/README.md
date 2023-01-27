@@ -1,5 +1,9 @@
 ## Molecules
 
-A subpasta `molecules` armazena componentes que fazem composição de atoms. Tendo então, um contexto menos genérico e de alta reutilização. Ex.: FormInput, AlertMessage, FormCardEditImage…
+As moléculas são grupos relativamente simples de elementos da interface do usuário que funcionam juntos como uma unidade . Por exemplo, uma label de formulário, input de pesquisa e botão podem se unir para criar uma molécula de formulário de pesquisa.
 
-Leia: [Atomic Design](https://medium.com/pretux/atomic-design-o-que-%C3%A9-como-surgiu-e-sua-import%C3%A2ncia-para-a-cria%C3%A7%C3%A3o-do-design-system-e3ac7b5aca2c)
+Quando combinados, esses átomos abstratos de repente têm um propósito. O átomo de label agora define o átomo de input. Clicar no átomo de botão agora envia o formulário. O resultado é um componente simples, portátil e reutilizável que pode ser colocado em qualquer lugar onde a funcionalidade de pesquisa seja necessária.
+
+Leia: [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)
+
+![image](https://user-images.githubusercontent.com/113141035/215096683-eb2e2259-93ef-4a62-937b-b8c0f3357878.png)
