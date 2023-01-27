@@ -72,6 +72,7 @@ export default {
       solid: true,
       brands: true,
     },
+    async: true,
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
