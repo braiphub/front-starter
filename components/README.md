@@ -3,9 +3,9 @@
 O diretório `components` contém seus componentes Vue.js. Os componentes são os que compõe as diferentes partes da sua página e podem ser reutilizados e importados dentro das suas páginas, dos templates e até dentro de outros componentes.
 
 ```
-| components/
---| TheHeader.vue
---| TheFooter.vue
+📁 components/
+    📄 TheHeader.vue
+    📄 TheFooter.vue
 ```
 
 ```
@@ -38,10 +38,10 @@ Quem propôs essa metodologia foi o designer Brad Frost no ano de 2013. O objeti
 Se você tiver componentes dentro de diretórios aninhados tais como:
 
 ```
-components/
-  atoms/
-      user/
-         CustomButton.vue
+📁 components/
+  📁 atoms/
+      📁 user/
+         📁 CustomButton.vue
 ```
 
 O nome do componente será baseado no seu próprio caminho do diretório e nome de ficheiro. Portanto, o componente será:
