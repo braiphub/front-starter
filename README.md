@@ -1,39 +1,43 @@
-# front-end-starter
+# ⚡ Braip front-end starter
 
-## Build Setup
+## Comandos de configuração
 
 ```bash
-# install dependencies
-$ yarn install
+# Instalar dependências
+$ yarn install ou npm install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+# Roda o servidor em modo de desenvolvimento no endereço localhost:3000
+$ yarn dev ou npm run dev
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+# Build para produção logo em seguida rodar o servidor
+$ yarn build ou npm run build
+$ yarn start ou npm run start
 
-# generate static project
-$ yarn generate
+# Build do projeto estático
+$ yarn generate ou npm run generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+Para uma explicação detalhada leia a [documentação](https://nuxtjs.org).
 
-## Special Directories
+## Diretórios especiais
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+### `pages`
+
+O diretório `pages` no Nuxt.js é onde você coloca suas páginas da aplicação. Cada arquivo dentro desse diretório é automaticamente transformado em uma rota da aplicação. Por exemplo, se você tiver um arquivo chamado about.vue dentro do diretório pages, ele será acessível em http://sua-aplicacao.com/about.
+o Nuxt também suporta subdiretórios dentro do diretório `pages` para organizar suas rotas. Por exemplo, se você tiver um arquivo chamado index.vue dentro de um subdiretório chamado users, ele será acessível em http://sua-aplicacao.com/users/.
+Leia mais [na documentação](https://nuxtjs.org/docs/directory-structure/pages).
 
 ### `assets`
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+O diretório `assets` no Nuxt.js é onde você coloca arquivos estáticos, como imagens, fontes e arquivos de estilo. Esses arquivos estão disponíveis para serem importados e usados ​​em suas páginas, componentes e estilos globais. Leia mais [na documentação](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
 ### `components`
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+O diretório `components` no Nuxt.js é onde você coloca seus componentes Vue.js personalizados. Esses componentes podem ser reutilizados em várias páginas e layouts da aplicação. 
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+A estrutura de pastas deste diretório segue a metodologia do [atomic design](https://medium.com/pretux/atomic-design-o-que-%C3%A9-como-surgiu-e-sua-import%C3%A2ncia-para-a-cria%C3%A7%C3%A3o-do-design-system-e3ac7b5aca2c) e é composta pelas pastas [atoms](ir_pra_doc), [molecules](ir_pra_doc), [organisms](ir_pra_doc) e [templates](ir_pra_doc).
+
+Leia mais na [documentação do repositório]() ou na [documentação oficial](https://nuxtjs.org/docs/2.x/directory-structure/components).
 
 ### `layouts`
 
