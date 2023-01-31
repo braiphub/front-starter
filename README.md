@@ -35,9 +35,9 @@ O diretório `assets` no Nuxt.js é onde você coloca arquivos estáticos, como 
 
 O diretório `components` no Nuxt.js é onde você coloca seus componentes Vue.js personalizados. Esses componentes podem ser reutilizados em várias páginas e layouts da aplicação. 
 
-A estrutura de pastas deste diretório segue a metodologia do [atomic design](https://medium.com/pretux/atomic-design-o-que-%C3%A9-como-surgiu-e-sua-import%C3%A2ncia-para-a-cria%C3%A7%C3%A3o-do-design-system-e3ac7b5aca2c) e é composta pelas pastas [atoms](ir_pra_doc), [molecules](ir_pra_doc), [organisms](ir_pra_doc) e [templates](ir_pra_doc).
+A estrutura de pastas deste diretório segue a metodologia do [atomic design](https://medium.com/pretux/atomic-design-o-que-%C3%A9-como-surgiu-e-sua-import%C3%A2ncia-para-a-cria%C3%A7%C3%A3o-do-design-system-e3ac7b5aca2c) e é composta pelas pastas [atoms](https://github.com/braiphub/front-starter/tree/master/components/atoms), [molecules](https://github.com/braiphub/front-starter/tree/master/components/molecules), [organisms](https://github.com/braiphub/front-starter/tree/master/components/organisms) e [templates](https://github.com/braiphub/front-starter/tree/master/components/templates).
 
-Leia mais na [documentação do repositório]() ou na [documentação oficial](https://nuxtjs.org/docs/2.x/directory-structure/components).
+Leia mais na [documentação do repositório](https://github.com/braiphub/front-starter/tree/master/components) ou na [documentação oficial](https://nuxtjs.org/docs/2.x/directory-structure/components).
 
 ### `layouts`
 

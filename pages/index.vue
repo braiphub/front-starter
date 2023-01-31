@@ -7,7 +7,7 @@
         <div class="grid-container">
           <div class="grid-item">
             <a
-              href="https://github.com/henrique-arthur/braip-starter/blob/master/README.md"
+              href="https://github.com/braiphub/front-starter/blob/master/README.md"
               target="_blank"
             >
               <span>💜</span>
@@ -16,7 +16,7 @@
           </div>
           <div class="grid-item">
             <a
-              href="https://github.com/henrique-arthur/braip-starter/tree/master/components"
+              href="https://github.com/braiphub/front-starter/tree/master/components"
               target="_blank"
             >
               <span>⚛️</span>
